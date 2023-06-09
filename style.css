@@ -1,0 +1,212 @@
+body {
+  background-color: #fffaff;
+  color: rgb(137, 108, 244);
+}
+main {
+  display: flex;
+  justify-content: center;
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  min-height: 200px;
+  z-index: -1;
+  font-style: unset;
+  align-items: center;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+}
+
+h1 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 40px;
+  text-align: center;
+}
+p {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 18px;
+  padding: 10px;
+  margin: 20px;
+}
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+}
+.container h1 {
+  font-size: 30px;
+  color: rgb(0, 0, 0);
+}
+
+.container p {
+  font-size: 20px;
+  color: rgb(243, 20, 113);
+}
+
+.container-img {
+  display: flexbox;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-content: space-between 20;
+}
+.container-img img {
+  width: 500px;
+  height: 500px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px;
+}
+.column {
+  flex: 1;
+  padding: 10px;
+}
+@media (max-width: 600px) {
+  .column {
+    flex: 100%;
+  }
+}
+.container-nav {
+  display: flex;
+  padding: 10px;
+  height: 50px;
+  background: linear-gradient(to right, #c0ab95, #ff0000);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+}
+
+li > a {
+  padding: 8px 24px;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.button-menu-toggle {
+  display: none;
+}
+@media (max-width: 768px) {
+  .column {
+    flex: 100%;
+  }
+  .container-img {
+    flex-direction: column;
+  }
+  .nav-links {
+    display: none;
+  }
+
+  .button-menu-toggle {
+    display: block;
+    background-color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 0 24px;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  .nav-links.nav-links-responsive {
+    position: absolute;
+    display: flex;
+    background-color: rgba(20, 20, 20, 0.95);
+    width: 100%;
+    height: 100%;
+    top: 70px;
+    left: 0;
+    flex-direction: column;
+    padding-top: 200px;
+    align-items: center;
+    gap: 70px;
+    font-size: 40px;
+  }
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  display: block;
+  padding: 10px 20px;
+  color: orange; /* Color naranja */
+  text-decoration: none;
+}
+@font-face {
+  font-family: "lobster"; /* Nombre que le asignamos a la fuente */
+  src: url("Lobster-Regular.ttf"); /* Ruta relativa al archivo de la fuente */
+}
+
+nav ul li a:hover {
+  background-color: #e5e5e5;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ff0080;
+  color: rgb(0, 0, 0);
+  font-family: "Waltograph", cursive;
+  text-decoration: none;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ff9933;
+}
+
+.video-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  width: 100%;
+  height: auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.container img {
+
+  width: 400px;
+  height: 400px;
+}
+.container-nav img {
+  width: 50px;
+  height: 50px;
+
+}
+
